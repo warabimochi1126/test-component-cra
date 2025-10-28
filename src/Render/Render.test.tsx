@@ -1,9 +1,16 @@
 import { render, screen } from "@testing-library/react";
 import Render from "./Render";
 
+// 学習内容は以下の通り
+// 要素がレンダリングされているか
+// DOM要素の取得方法
+// getBy・getAllByの違い
+// getBy・queryByの違い
+
 // jest:
 // describe ⇒ テストのタイトル
 // it ⇒ テストケースの内容を記載する
+// expect(value).matchr() ⇒ valueがmatcherに適合しているか判定する
 // react-testing-library:
 // render ⇒ コンポーネントを描画する
 // screen.debug() ⇒ 引数無し:描画されている物をコンソールに表示する 引数有り:引数のDOM要素をコンソールに表示する

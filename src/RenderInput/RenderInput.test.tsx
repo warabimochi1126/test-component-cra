@@ -2,6 +2,10 @@ import { render, screen } from "@testing-library/react";
 import RenderInput from "./RenderInput";
 import userEvent from "@testing-library/user-event";
 
+// 学習内容は以下の通り
+// インタラクティブな動作をテスト上で行う
+// 関数をモックする
+
 // react-testing-library:
 // screen.getByPlaceHolderText() ⇒ placeholderの文字列でDOM要素を特定
 // userEvent.type() ⇒ 要素に文字列を入力する

@@ -11,6 +11,7 @@
     "@types/node": "^16.18.126",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
+    "axios": "^0.27.2",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-scripts": "5.0.1",
@@ -22,7 +23,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --verbose",
     "eject": "react-scripts eject"
-    },
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -40,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "msw": "^0.39.2"
   }
 }
