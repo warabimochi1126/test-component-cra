@@ -1,4 +1,5 @@
 import "./App.css";
+import CustomHooks from "./CustomHooks/CustomHooks";
 import FrameWorkList from "./FrameworkList/FrameworkList";
 import MockServer from "./MockServer/MockServer";
 import Render from "./Render/Render";
@@ -28,6 +29,7 @@ function App() {
       {/* <FrameWorkList /> */}
       <UseEffectRender />
       <MockServer />
+      <CustomHooks />
     </div>
   );
 }
