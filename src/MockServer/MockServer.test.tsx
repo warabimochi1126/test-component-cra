@@ -52,30 +52,4 @@ describe("Mocking API", () => {
     expect(screen.queryByRole("heading")).toBeNull();
     expect(screen.getByRole("button")).not.toHaveAttribute("disabled");
   });
-
-  it("調査-use無しGET", async () => {
-    const response = await fetch(
-      "https://jsonplaceholder.typicode.com/users/1"
-    );
-    console.log(response.status);
-  });
-
-  it("調査-use有りGET", async () => {
-    server.use(
-      rest.get(
-        "https://jsonplaceholder.typicode.com/users/2",
-        (req, res, ctx) => {
-          return res(ctx.status(404));
-        }
-      )
-    );
-    const response = await fetch(
-      "https://jsonplaceholder.typicode.com/users/2"
-    );
-    console.log(response.status); // server.useはハンドラを追加する
-    const responseOne = await fetch(
-      "https://jsonplaceholder.typicode.com/users/1"
-    );
-    console.log(responseOne.status); // setupServerで作成した物も使える(server.useでモックサーバ自体が上書きされるわけではない)
-  });
 });

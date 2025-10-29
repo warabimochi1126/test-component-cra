@@ -10,7 +10,7 @@ export const useCounter = (initialCount: number) => {
     setCount((count) => count - 1);
   };
   const double = () => {
-    setCount((count) => count + 2);
+    setCount((count) => count * 2);
   };
   const triple = () => {
     setCount((count) => count * 3);
