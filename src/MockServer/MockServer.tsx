@@ -25,7 +25,7 @@ const MockServer: FC = () => {
       <button onClick={fetchUser} disabled={clicked}>
         {buttonText}
       </button>
-      {userName && <p>{userName}</p>}
+      {userName && <h3>{userName}</h3>}
       {error && <p data-testid="error">{error}</p>}
     </div>
   );
